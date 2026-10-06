@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             door.SetActive(false); 
         }
         
-        if (count >= 27)
+        if (count >= 34)
         {
             winTextObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Win!";
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
             if (restartButton != null) restartButton.SetActive(true);
 
             winTextObject.SetActive(true);
-            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose Dude! SUPER COOKED";
 
             Destroy(gameObject);
         }
